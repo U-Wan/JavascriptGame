@@ -307,7 +307,7 @@ function makeItPuzzle(grid, difficulty) {
     return remainedValues;
   }
 
-  while (remainedValues > difficulty * 5 + 59) {
+  while (remainedValues > difficulty * 5 + 20) {
     var x = Math.floor(Math.random() * 9);
     var y = Math.floor(Math.random() * 9);
     remainedValues = clearValue(puzzle, x, y, remainedValues);
